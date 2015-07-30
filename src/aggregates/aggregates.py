@@ -39,10 +39,10 @@ class FirstAggregate(Aggregate):
                 else:
                     return value
 
-        if self.default != NO_DEFAULT:
-            return self.default
-        else:
+        if self.default == NO_DEFAULT:
             raise AttributeError(name)
+        else:
+            return self.default
 
 
 class AllAggregate(Aggregate):
