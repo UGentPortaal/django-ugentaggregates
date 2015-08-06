@@ -111,6 +111,16 @@ class FirstAggregateTestCase(unittest.TestCase):
                                           {"field1": 4}]),
                          2)
 
+    def test_format(self):
+        """Test for the attribute ``format``.
+        """
+        double = lambda i: i * 2
+        aggr1 = self.FirstAggregate(format=double)
+        self.assertEqual(aggr1.format, double)
+        self.assertEqual(aggr1("field1", [{"field1": 1},
+                                          {"field1": 2}]),
+                         2)
+
     def test_default(self):
         """Test for the attribute ``default``.
         """
@@ -215,6 +225,16 @@ class AllAggregateTestCase(unittest.TestCase):
                          [2])
         self.assertEqual(aggr1("field1", [{"field1": 2},
                                           {"field1": 4}]),
+                         [2, 4])
+
+    def test_format(self):
+        """Test for the attribute ``format``.
+        """
+        double = lambda i: i * 2
+        aggr1 = self.AllAggregate(format=double)
+        self.assertEqual(aggr1.format, double)
+        self.assertEqual(aggr1("field1", [{"field1": 1},
+                                          {"field1": 2}]),
                          [2, 4])
 
     def test_unique(self):
