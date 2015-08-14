@@ -53,6 +53,8 @@ class FirstAggregate(Aggregate):
         for item in items:
             if has_field(item, name):
                 value = get_field(item, name)
+                if callable(value):
+                    value = value()
 
                 if self.valid and not self.valid(value):
                     continue
@@ -110,6 +112,8 @@ class AllAggregate(Aggregate):
         for item in items:
             if has_field(item, name):
                 values = get_field(item, name)
+                if callable(values):
+                    values = values()
                 if not hasattr(values, "__iter__"):
                     values = [values]
 

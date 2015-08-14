@@ -137,6 +137,17 @@ class FirstAggregateTestCase(unittest.TestCase):
                                           {"field2": 2}]),
                          -1)
 
+    def test_callable_value(self):
+        """Test for callable values.
+        """
+        aggr1 = self.FirstAggregate()
+        self.assertEqual(aggr1("field1", [{"field1": lambda: 1},
+                                          {"field1": 2}]),
+                         1)
+        self.assertEqual(aggr1("field1", [{"field1": 1},
+                                          {"field1": lambda: 2}]),
+                         1)
+
 
 class AllAggregateTestCase(unittest.TestCase):
     """Tests for class ``AllAggregate``.
@@ -253,3 +264,14 @@ class AllAggregateTestCase(unittest.TestCase):
         self.assertEqual(aggr2("field1", [{"field1": 1},
                                           {"field1": 1}]),
                          [1])
+
+    def test_callable_value(self):
+        """Test for callable values.
+        """
+        aggr1 = self.AllAggregate()
+        self.assertEqual(aggr1("field1", [{"field1": lambda: 1},
+                                          {"field1": 2}]),
+                         [1, 2])
+        self.assertEqual(aggr1("field1", [{"field1": 1},
+                                          {"field1": lambda: 2}]),
+                         [1, 2])
