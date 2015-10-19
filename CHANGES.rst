@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-django-aggregates 0.0.1
+django-aggregates 1.0.0
 -----------------------
 
-- Initial working version (PTB-143) [bvderbau]
+- Initial release (PTB-143) [bvderbau]
