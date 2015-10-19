@@ -3,7 +3,7 @@ import os.path
 from setuptools import setup, find_packages
 
 setup(name="django-aggregates",
-      version="0.0.1",
+      version="1.0.0",
       author="UGent Portaal Team",
       author_email="portaal-tech@ugent.be",
       description="Aggregates for Django.",
