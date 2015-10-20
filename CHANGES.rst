@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+django-aggregates 1.0.1
+-----------------------
+
+- Fix for project pypkg-mkdocs (PTB-143) [bvderbau]
+
+
 django-aggregates 1.0.0
 -----------------------
 
