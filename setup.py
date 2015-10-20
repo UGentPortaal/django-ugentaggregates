@@ -1,9 +1,12 @@
+import os
 import os.path
 
 from setuptools import setup, find_packages
 
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+
 setup(name="django-aggregates",
-      version="1.0.0",
+      version="1.0.1",
       author="UGent Portaal Team",
       author_email="portaal-tech@ugent.be",
       description="Aggregates for Django.",
