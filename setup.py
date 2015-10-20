@@ -3,6 +3,8 @@ import os.path
 
 from setuptools import setup, find_packages
 
+README = open(os.path.join(os.path.dirname(__file__), "README.rst")).read()
+
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(name="django-aggregates",
@@ -10,8 +12,7 @@ setup(name="django-aggregates",
       author="UGent Portaal Team",
       author_email="portaal-tech@ugent.be",
       description="Aggregates for Django.",
-      long_description=open(os.path.join(os.path.dirname(__file__),
-                                         "README.rst")).read(),
+      long_description=README,
       license="BSD",
       url="https://github.com/UGentPortaal/django-aggregates",
       packages=find_packages("src"),
