@@ -24,7 +24,7 @@ class UtilsTestCase(unittest.TestCase):
     def test_has_field(self):
         """Test for function ``has_field``.
         """
-        from aggregates.utils import has_field
+        from ugentaggregates.utils import has_field
 
         self.assertTrue(has_field(self.object1, "field1"))
         self.assertFalse(has_field(self.object1, "field2"))
@@ -35,7 +35,7 @@ class UtilsTestCase(unittest.TestCase):
     def test_get_field(self):
         """Test for function ``get_field``.
         """
-        from aggregates.utils import get_field
+        from ugentaggregates.utils import get_field
 
         self.assertEqual(get_field(self.object1, "field1"), "abc")
         with self.assertRaises(AttributeError):

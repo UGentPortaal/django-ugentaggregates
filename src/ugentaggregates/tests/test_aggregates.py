@@ -9,7 +9,7 @@ class AggregateTestCase(unittest.TestCase):
     def setUpClass(cls):
         """Set up the class fixture.
         """
-        from aggregates.aggregates import Aggregate
+        from ugentaggregates.aggregates import Aggregate
 
         cls.Aggregate = Aggregate
 
@@ -43,9 +43,9 @@ class FirstAggregateTestCase(unittest.TestCase):
     def setUpClass(cls):
         """Set up the class fixture.
         """
-        from aggregates.aggregates import Aggregate
-        from aggregates.aggregates import FirstAggregate
-        from aggregates.aggregates import NO_DEFAULT
+        from ugentaggregates.aggregates import Aggregate
+        from ugentaggregates.aggregates import FirstAggregate
+        from ugentaggregates.aggregates import NO_DEFAULT
 
         cls.Aggregate = Aggregate
         cls.FirstAggregate = FirstAggregate
@@ -157,8 +157,8 @@ class AllAggregateTestCase(unittest.TestCase):
     def setUpClass(cls):
         """Set up the class fixture.
         """
-        from aggregates.aggregates import Aggregate
-        from aggregates.aggregates import AllAggregate
+        from ugentaggregates.aggregates import Aggregate
+        from ugentaggregates.aggregates import AllAggregate
 
         cls.Aggregate = Aggregate
         cls.AllAggregate = AllAggregate
