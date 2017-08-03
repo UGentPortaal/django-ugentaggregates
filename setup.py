@@ -7,14 +7,14 @@ README = open(os.path.join(os.path.dirname(__file__), "README.rst")).read()
 
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
-setup(name="django-aggregates",
+setup(name="django-ugentaggregates",
       version="1.0.2",
       author="UGent Portaal Team",
       author_email="portaal-tech@ugent.be",
       description="Aggregates for Django.",
       long_description=README,
       license="BSD",
-      url="https://github.com/UGentPortaal/django-aggregates",
+      url="https://github.com/UGentPortaal/django-ugentaggregates",
       packages=find_packages("src"),
       package_dir={"": "src"},
       include_package_data=True,
@@ -32,4 +32,4 @@ setup(name="django-aggregates",
           "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
       ],
       install_requires=["django"],
-      test_suite="aggregates.tests")
+      test_suite="ugentaggregates.tests")

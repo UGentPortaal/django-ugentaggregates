@@ -9,9 +9,9 @@ class CollectionTestCase(unittest.TestCase):
     def setUpClass(cls):
         """Set up the class fixture.
         """
-        from aggregates.aggregates import AllAggregate
-        from aggregates.aggregates import FirstAggregate
-        from aggregates.collection import Collection
+        from ugentaggregates.aggregates import AllAggregate
+        from ugentaggregates.aggregates import FirstAggregate
+        from ugentaggregates.collection import Collection
 
         class Obj1(object):
             pass
