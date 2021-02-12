@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+django-ugentaggregates 2.0.0 (unreleased)
+-----------------------------------------
+
+- Migrate the code to Python 3 (PTB-494) [bvderbau]
+
+
 django-ugentaggregates 1.1.0
 ----------------------------
 
