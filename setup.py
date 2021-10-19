@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django-ugentaggregates",
-    version="1.1.0",
+    version="2.0.0",
     author="UGent Portaal Team",
     author_email="portaal-tech@ugent.be",
     description="Aggregates for Django.",
@@ -27,10 +27,7 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        "Topic :: Internet :: WWW/HTTP",
+        "Programming Language :: Python :: 3.6",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
     install_requires=["django"],

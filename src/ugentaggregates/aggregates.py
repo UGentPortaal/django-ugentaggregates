@@ -114,7 +114,9 @@ class AllAggregate(Aggregate):
                 values = get_field(item, name)
                 if callable(values):
                     values = values()
-                if not hasattr(values, "__iter__"):
+                if isinstance(values, (bytes, str)):
+                    values = [values]
+                elif not hasattr(values, "__iter__"):
                     values = [values]
 
                 for value in values:
