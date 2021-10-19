@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django-ugentaggregates",
-    version="1.1.0",
+    version="2.0.0",
     author="UGent Portaal Team",
     author_email="portaal-tech@ugent.be",
     description="Aggregates for Django.",
